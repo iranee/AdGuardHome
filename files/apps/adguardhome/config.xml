@@ -1,0 +1,15 @@
+<Application resource-id="adguardhome">
+  <AppID>WHOCARES_GENIEAPP_010015</AppID>
+  <Category>APP_CAT_NETWORK_OTHER</Category>   
+  <Name>AdGuard Home</Name>
+  <Author>bbis</Author>
+  <Version>0.102.0</Version>
+  <RequireReboot>1</RequireReboot>
+  <ConfigURL></ConfigURL>
+  <InfoURL lang="en-us">https://github.com/AdguardTeam/adguardhome</InfoURL>
+  <LaunchURL>http://localhost:3000</LaunchURL>
+  <ReservePort>3000</ReservePort>
+  <DebianPackage>adguardhome</DebianPackage>
+  <ServiceName>AdGuardHome.service</ServiceName><!-- no service required -->
+  <Description lang="zh-cn">AdGuard Home 是一款全网广告拦截与反跟踪软件。在您将其安装完毕后，它将保护您所有家用设备，同时您不再需要安装任何客户端软件。</Description>
+</Application>

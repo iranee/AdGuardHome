@@ -1,0 +1,12 @@
+Source: adguardhome
+Section: contrib
+Priority: extra
+Maintainer: bbis <bbis@cheen.cn>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 0.102.0
+Homepage: https://github.com/AdguardTeam/adguardhome
+
+Package: adguardhome
+Architecture: all
+Depends: ${misc:Depends}, readynasos (>= 6.0.5~T1271)
+Description: AdGuardHome - Privacy protection center for you and your devices Free and open source, powerful network-wide ads & trackers blocking DNS server.

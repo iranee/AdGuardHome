@@ -1,0 +1,16 @@
+[Unit]
+Description=AdGuard Home: Network-level blocker
+ConditionFileIsExecutable=/apps/adguardhome/bin/adguardhome
+After=pache2.service readynasd.service
+
+[Service]
+StartLimitInterval=5
+StartLimitBurst=10
+ExecStart=/apps/adguardhome/bin/adguardhome "-s" "run"
+WorkingDirectory=/
+Restart=always
+RestartSec=10
+EnvironmentFile=-/etc/sysconfig/AdGuardHome
+
+[Install]
+WantedBy=multi-user.target
